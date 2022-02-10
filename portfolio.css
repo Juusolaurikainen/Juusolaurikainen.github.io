@@ -1,0 +1,26 @@
+.section-portfolio {
+    background-color:#FFF447;
+    color: black;
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+}
+.heading-primary-portfolio {
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    animation-name: moveinleft; /* samaa animaatiota helppo käyttää muuallakin*/
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    
+}
+
+.text-portfolio {
+    padding-left: 5rem;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 50%;
+    animation: moveinleft 1.5s ease-out;    /*1.5s animaation kestoa pidennetty*/
+}

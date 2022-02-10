@@ -1,0 +1,74 @@
+.header-yhteystiedot {
+    padding: 2rem;
+}
+
+.section-heading-yhteystiedot {
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    color: white;
+    text-align: center;
+}
+
+.section-yhteystiedot {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-yhteystiedot {
+    padding-left: 5rem;
+    padding-top: 2rem;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 50%;
+    animation: moveinleft 1.5s ease-out;    
+    color: white;
+}
+
+.yhteystiedot-text {
+    padding-left: 5rem;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color:white;
+    width: 50%;
+    animation: moveinleft 1.5s ease-out;
+}
+
+.buttons-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.button1:hover {
+    box-shadow: 0 .5rem 1rem rgb(184, 181, 3);
+}
+
+.button2:hover {
+    box-shadow: 0 .5rem 1rem rgb(166, 184, 3);
+}
+
+.button1 {
+    background-image: url(../images/fr2.jpg.png);   /* buttonit tehty kuvilla koska en löytänyt hyviä ilmaisia iconeita sitä varten*/
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button2 {
+    background-image: url(../images/fr.jpg.png);
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}

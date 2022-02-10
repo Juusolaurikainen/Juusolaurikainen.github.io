@@ -1,0 +1,62 @@
+.header {
+    background-image: url(./images/sieppaa1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+    height: 94vh;
+    width: 100%;
+    top: 6vh;
+    left: 0;
+    z-index: -10;
+}
+
+.header-etusivu {
+    background-color: black;
+    padding: 0.5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+
+.header-heading-primary {
+    padding-top: 8rem;
+    padding-left: 5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.header-heading-second {
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 1rem;
+    animation: moveinleft 1.5s ease-out;
+}
+
+.header-text {
+    padding-left: 5rem;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+    animation: moveinleft 2s ease-out;
+}
+
+.header-btn {
+    font-size: 1.5rem;
+    color: green;
+    padding-left: 5.5rem;
+    animation: moveinleft 2.5s ease-out;
+}
+
+.link-green {
+    color: #FFF447;
+    text-decoration: none;
+}

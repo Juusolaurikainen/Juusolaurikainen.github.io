@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>BEAR</p>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--saa tehtyä myös puhelin viewportin-->
+
+        <title>etusivu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel:wght@400;500;600;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./styles.css"> <!--Erikseen kaikille "osioille" omat css tiedostot-->
+        <link rel="stylesheet" type="text/css" href="./header.css">
+        <link rel="stylesheet" type="text/css" href="./portfolio.css">
+        <link rel="stylesheet" type="text/css" href="./yhteystiedot.css">
+        <link rel="stylesheet" type="text/css" href="./harrastukset.css">
+        <link rel="stylesheet" type="text/css" href="./galleria.css">
+        <link rel="stylesheet" type="text/css" href="./työpaikat.css">
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>  <!--Pieni javascriptin pätkä jonka katsoin youtubesta että sain active nappulan toimimaan scrolli sivustolla.-->
+        <script type="application/javascript"> 
+            
+            $(document).ready(function(){
+                $('.link').click(function(){
+                    $('.link').removeClass("current-page");
+                    $(this).addClass("current-page");
+                });
+            });
+        </script>
+    </head>
+    <body>              
+    
+        <nav class="menu">  <!--menu alkaa-->   
+            <div class="item">
+                <a class="link current-page" href="#1">Home</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#2">Portfolio</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#3">Hobbies</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#4">Jobs</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#5">Gallery</a>
+            </div>
+            <div class="item">
+                <a class="link" href="#6">Contacts</a>
+            </div>
+        </nav>  <!--Menu päättyy-->
+
+        <header class="header"> <!--"pääsivu" alkaa joka näkyy ensimmäisenä-->
+            <div class="header-etusivu" id="1">
+                <h1 class="header-heading-primary">Terve, olen Juuso.</h1>
+                <h1 class="header-heading-second">Automaalari. Autokorinkorjaaja.</h1>
+                <p class="header-text">Opiskelen ensimmäistä vuotta autotekniikan insinööriksi.</p>
+                <div class="header-btn">
+                    <a class="link-green" href="#2">Learn more></a>
+                </div>
+            </div>
+        </header>   <!--"pääsivu" päättyy-->
+
+        <section class="section-portfolio" id="2">  <!--portfolio alkaa-->
+            <h2 class="heading-primary-portfolio">Hieman itsestäni</h2>
+                <p class="text-portfolio">
+                    Olen 23-vuotias nuori mies kotoisin Mikkelistä ja nykyisin asun Tampereella.
+                    Koulutukseltani olen autokorinkorjaaja ja automaalari.
+                    Opiskelen ensimmäistä vuotta autotekniikan insinööriksi täällä Tampereen ammattikorkeakoulussa.
+                    Autot, tietokoneet ja urheilu ovat kiinnostaneet ja olleet mukana pienestä pitäen.
+                </p>
+        </section>  <!--portfolio päättyy-->
+
+        <div class="video-container">   <!--video sivulle backgroundis, video pyörii kokotaustalla jotta sama video pyörii samanaikaisesti-->
+            <video autoplay loop muted>
+                <source src="/images/4k_ink_or_black_smoke_6.mov" type="video/mp4"> <!--Video background on sivustolta Videezy.com ja on ilmainen ja vapaasti käytettävä-->
+            </video>
+        </div>
+
+        <div class="header-harrastukset" id="3" >   
+            <h2 class="heading-harrastukset">Hieman harrastuksistani</h2>
+        </div>
+        <section class="section-hobbies">   <!--Harrastukset alkaa-->
+            <div class="hobbys-first">
+                <article class="article-hobbys-bottom">
+                    <h4 class="article-hobbys-heading">Kuntosali</h4>
+                        <p class="hobby-text">Kuntosali harrastuksen aloitin noin 17 vuotiaana.
+                        Painojen nosto ja oman kehon muokkaaminen oli ollut mielessä hyvin pitkään, 
+                        joten päätin hommata kuntosalikortin. Kuntosalia on tähän mennessä tullut harrastettua noin 4 vuotta,
+                        noin 3-5 kertaa viikossa. Motivaatio on pysynyt korkealla koska kehoon on tullut
+                        huomattavasti muutoksia ja terveyden tila on noussut huimasti. </p>
+                </article>
+                <article class="article-hobbys-top">
+                    <h4 class="article-hobbys-heading">Tietokoneet</h4>
+                        <p class="hobby-text">Sain ensimmäisen konsolin noin 5 vuotiaana,
+                        se oli playstation 1. Sen jälkeen tuli vielä useampi konsoli ostettua
+                        mutta tietokoneen saatua alkoi hiipua kiinnostus konsoleihin.
+                        Tietokoneen sain noin 8 vuotiaana. Siitä alkoikin sitten kiinnostus
+                        nousemaan tietokoneita kohtaan ja pelitkin tulivat mukaan.</p>
+                </article>
+            </div>
+            <div class="hobbys-second">
+                <article class="article-hobbys-left">
+                    <h4 class="article-hobbys-heading">Maalaaminen</h4>
+                        <p class="hobby-text">Rupesin harrastamaan autojen ja moottoripyörien
+                        maalaamista myös vapaa-ajalla töiden ohella.
+                        Maalailin omia projekteja samalla ja pieniä erikoismaalauksia. </p>
+                </article>
+            </div>
+        </section>  <!--Harrastukset päättyy-->
+
+        <section class="section-jobs" id="4">   <!--Työpaikkaosio alkaa-->
+            <h2 class="section-jobs-heading">Hieman työpaikoistani</h2>
+            <div class="articles-jobs">
+                <article class="article-jobs">
+                    <h4 class="article-heading-jobs">Automaalari</h4>
+                        <div class="article-text-jobs">
+                            <a class="link" href="http://www.ajanvaunu.fi/ ">Ajanvaunu Oy</a> <p> Mikkeli | Toukokuu 2018 - Heinäkuu 2020</p> 
+                            <p>Työskentelin automaalarin työtehtävissä Ajanvaunu Oy:lla kaksi vuotta valmistumiseni jälkeen.</p>
+                        </div>   
+                </article>
+                <article class="article-jobs">
+                    <h4 class="article-heading-jobs">Koneenkäyttäjä</h4>
+                        <div class="article-text-jobs">
+                            <a class="link" href="https://www.mikkelinpesula.fi/ ">Mikkelin pesula</a> <p> Mikkeli | Toukokuu 2014 - Elokuu 2017</p> 
+                            <p>Työskentelin erinlaisissa pesulan tehtävissä kesäisin ja satunnaisesti muina lomakausina aikavälillä 2014-2017.</p>
+                        </div>
+                </article>
+            </div>
+        </section>  <!--Työpaikkasivu päättyy-->
+
+
+        <section class="section-galleria">  <!--Galleria alkaa-->
+            <h2 class="section-heading-galleria">Maalauskuvia</h2>
+            <div class="galleria" id="5">
+                <div class="picture-up">
+                <a href="images/image-3.jpg" data-lightbox="autot" data-title="Pohjustusta.">
+                    <img class="kuvat1" alt="Maalauskuva" src="images/image-3.jpg"></a>
+                </div>
+                <div class="picture-middle">
+                <a href="images/image-2.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuivumassa.">
+                    <img class="kuvat1" alt="Maalauskuva" src="images/image-2.jpg"></a>              
+                </div>
+            </div>
+            <div class="galleria-2">
+                <div class="picture-bottom">
+                <a href="images/image-4.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuvia.">
+                    <img class="kuvat2" alt="Maalauskuva" src="images/image-4.jpg"></a>
+                <a href="images/image-5.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuvia.">
+                    <img class="kuvat2" alt="Maalauskuva" src="images/image-5.jpg"></a>
+                <a href="images/image-1.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuvia.">
+                    <img class="kuvat2" alt="Maalauskuva" src="images/image-1.jpg"></a>
+                </div>
+            </div>
+            <div class="galleria-3">
+                <a href="images/image-6.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuvia.">
+                    <img class="kuvat4" alt="Maalauskuva" src="images/image-6.jpg"></a>
+                <a href="images/image-7.jpg" data-lightbox="autot" data-title="Maalauksen jälkeen kuvia.">
+                    <img class="kuvat4" alt="Maalauskuva" src="images/image-7.jpg"></a>   
+            </div>
+        </section>  <!--galleria päättyy-->
+
+        <footer class="footer-section"> <!--footerosio alkaa-->
+        <section class="footer-section-yhteystiedot" id="6">
+            <h2 class="section-heading-yhteystiedot">Ota yhteyttä!</h2>
+                <div class="section-yhteystiedot">
+                    <div class="section-sähköposti">
+                        <h3 class="heading-yhteystiedot"> Sähköposti</h3>
+                        <p class="yhteystiedot-text"> juusolaurikainenn@gmail.com</p>
+                    </div>
+                    <div class="section-puhelinnumero">
+                        <h3 class="heading-yhteystiedot"> Puhelinnumero</h3>
+                        <p class="yhteystiedot-text"> +358504388719</p>
+                    </div>
+            </div>
+            <div class="buttons-footer">
+                <div class="button-first">
+            <a href="https://www.facebook.com/Juuso.turku/about" class="button1">  </a>
+            </div>
+                <div class="button-second">
+            <a href="https://www.instagram.com/juusolaurikainen/" class="button2"> </a>
+        </div>
+            </div>
+        </section>
+        </footer>   <!--footerosio päättyy-->
+        <script src="js/lightbox-plus-jquery.js"></script>
+    </body>
+</html> 

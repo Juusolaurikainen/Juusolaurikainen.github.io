@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+    margin: 0;  /*default asetukset.*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;    /* fonttikoot tehty rem:illä koska vertautuu rootin fonttikokoon.*/
+    scroll-behavior: smooth;    /* kun painaa menusta kohdetta, scrollaantuu smoothisti alas eikä "hyppää"*/
+}
+
+body {
+    font-family: 'Lato', sans-serif;; /*yleisfontti*/
+    font-weight: 300;
+    line-height: 1.7;   /* teksti kappaleen rivin korkeus*/
+    color: white;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+@media (max-width: 800px) { /* Kun resoluutio pienenee tapahtuu kyseiset komennot*/
+
+    .hero-image {
+        background-image: none; /*Hero-image häviää*/
+        
+    }
+
+    html {
+        font-size: 50%; /* font-size pienenee puolella*/
+    }
+}
+
+.menu {
+    background-color: black;
+    padding: 0.5rem;
+    width: 100vw;   /*vw = viewport width, 10vh = 10% näytön leveydestä*/
+    display: flex;  /*flex-box*/
+    flex-direction: row;    
+    justify-content: flex-start;    /*Määrittää, miten elementit sijoitetaan pääakselin (main axis) suhteen*/
+    align-items: center;    /*Määrittää, miten elementit sijoiteteaan läpiakselin (cross axis) suhteen*/
+    height: 6vh;        /*vh = viewport height, 10vh = 10% näytön korkeudesta*/
+    flex-wrap: nowrap;  /*Määrittää miten elementit flexboxin sisällä siirtyvät, jos flexboxilla ei ole riittävästi tilaa*/
+    align-content: space-around;    /*Jos rivejä on monta, määrittää miten rivit sijoitetaan läpiakselin (cross axis) suhteen*/
+    position: fixed;
+    z-index: 1;
+}
+
+.heading-primary {
+    padding-top: 4rem;
+    padding-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    animation-name: moveinleft; /* animaation nimi joka löytyy alhaalta*/
+    animation-duration: 1s; /* animaation kesto*/
+    animation-timing-function: ease-out;    /* kuinka nopeasti animaatio tapahtuu*/
+}
+
+  @keyframes moveinleft {   /* animaatio*/
+
+    0%  {   /* animaation alku*/
+        opacity: 0; /*teksti on alussa näkymätön*/
+        transform: translateX(-10rem);  /* animaatio tulee vasemmalta oikealle*/
+        
+    }
+
+    80% {
+        transform: translate(1rem); /* teksti menee laitetun loppu positionin yli animaatiossa*/
+    }
+
+    100% {  /* animaation loppu*/
+        opacity: 1;     /* teksti näkyy*/
+        transform: translate(0);    /* teksti palaa halutulle paikalle*/
+    }
+}
+
+.link:link,
+.link:visited {     /* linkki kun sitä on jo clikattu kerran */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.current-page {
+    color: #FFF447!important;
+}
+
+.item {
+    background-color: #050505;
+    padding: 0.5rem;
+    margin: 0.5rem 1rem;
+}
+
+a.link:hover {     /* kun hiiri on päällä */
+    color: #e6b800;
+}
+
+.video-container {  /*backgroundvideo, joka pyörii kokotaustalla jotta sama video pyörii samanaikaisesti harrastuksien ja footterin taustalla*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -12;   /*Z-index toimii vain, jos position on asetettu*/
+    opacity: 1;
+}

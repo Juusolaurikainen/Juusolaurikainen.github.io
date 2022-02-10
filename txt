@@ -1,0 +1,25 @@
+.heading-second-työpaikat {
+    padding-left: 5rem;
+    padding-top: 2rem;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 50%;
+    animation: moveinleft 1.5s ease-out;
+    color: #1A1A1A;
+}
+    <div class="background-phone">
+        <header class="header-yhteystiedot" id="6">
+            <h1 class="heading-primary-yhteystiedot">Ota yhteyttä!</h1>
+            <h2 class="contact-header"> Sähköposti</h2>
+            <p class="contact-text"> juusolaurikainenn@gmail.com</p>
+            <h2 class="contact-header"> Puhelinnumero</h2>
+            <p class="contact-text"> +358504388719</p>
+        
+        </header>
+        </div>
+    
+        <footer class="footer">
+            <a href="https://www.facebook.com/Juuso.turku/about" class="button1">  </a>
+            <a href="https://www.instagram.com/juusolaurikainen/" class="button2"> </a>
+        </footer>
